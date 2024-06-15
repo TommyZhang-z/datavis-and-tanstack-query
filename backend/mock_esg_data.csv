@@ -1,0 +1,21 @@
+Company,Year,ESG_Score,Carbon_Emissions_Scope_1_and_2,Water_Usage,Waste_Management,Employee_Diversity,Climate_Risk_Assessment,Transition_Plan,Climate_related_Financial_Impact,Energy_Consumption,Biodiversity_Impact,Ecosystem_Services_Dependency,Biodiversity_Action_Plan
+MSFT,2014,59,82111,7757937,2112,44,High,Net zero by 2030,31355108,486394,Low,High,Enhance biodiversity by 2025
+MSFT,2015,58,92249,9550200,4185,37,High,Net zero by 2050,69317208,467411,High,Moderate,Protect and restore ecosystems by 2030
+MSFT,2016,92,66262,8094371,4599,32,High,Net zero by 2040,63932723,427526,Low,Moderate,Protect and restore ecosystems by 2030
+MSFT,2017,51,64871,18754727,1861,49,Moderate,Net zero by 2030,80631766,487873,Moderate,High,Enhance biodiversity by 2025
+MSFT,2018,50,93412,5285459,4787,42,High,Net zero by 2030,35164122,423049,High,High,Enhance biodiversity by 2025
+MSFT,2019,94,70094,12759448,3826,31,Low,Net zero by 2030,40691813,476684,Moderate,Low,Enhance biodiversity by 2025
+MSFT,2020,57,84046,11707353,1394,36,Moderate,Net zero by 2050,29067383,300523,High,High,Protect and restore ecosystems by 2030
+MSFT,2021,70,97961,18473604,1127,45,Low,Net zero by 2050,65002596,326783,Low,Moderate,Enhance biodiversity by 2025
+MSFT,2022,91,77522,13103487,1997,44,High,Net zero by 2030,17470786,232975,Low,High,Protect and restore ecosystems by 2030
+MSFT,2023,68,30739,12737538,3463,26,Moderate,Net zero by 2050,50215685,384425,Low,High,Enhance biodiversity by 2025
+AAPL,2014,80,88800,7473507,2156,49,Moderate,Net zero by 2030,71162382,277537,Low,High,Protect and restore ecosystems by 2030
+AAPL,2015,69,84218,15052577,4163,47,Moderate,Net zero by 2050,24461231,375669,High,Low,Enhance biodiversity by 2025
+AAPL,2016,88,66627,7545731,2261,46,Moderate,Net zero by 2050,86735997,450524,Low,Moderate,Enhance biodiversity by 2025
+AAPL,2017,78,31353,13405010,1661,34,Moderate,Net zero by 2040,76684681,448030,Moderate,Low,Protect and restore ecosystems by 2030
+AAPL,2018,81,85563,9849126,3273,24,High,Net zero by 2040,37109031,391600,Moderate,High,Enhance biodiversity by 2025
+AAPL,2019,97,54972,17612232,3179,42,High,Net zero by 2040,34390340,354343,Low,Low,Enhance biodiversity by 2025
+AAPL,2020,97,50259,19803250,1519,33,High,Net zero by 2050,51819230,488729,High,High,Protect and restore ecosystems by 2030
+AAPL,2021,60,63868,16803476,4721,37,Low,Net zero by 2050,19654083,293607,Low,Low,Enhance biodiversity by 2025
+AAPL,2022,76,47967,5294150,1846,36,Moderate,Net zero by 2040,58759545,422687,Moderate,Low,Enhance biodiversity by 2025
+AAPL,2023,76,93042,5913668,2848,35,Low,Net zero by 2030,52170519,484553,High,Low,Enhance biodiversity by 2025

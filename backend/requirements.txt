@@ -1,0 +1,5 @@
+fastapi
+scalar-fastapi
+pandas
+numpy
+pydantic-settings
