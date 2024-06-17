@@ -61,7 +61,7 @@ export const usePokemonsAndStats = ({ nSlots, selector }) => {
   };
 
   return { pokemons, stats, selectedPokemons, updatePokemons };
-}
+};
 
 export const usePokemons = () => {
   return useQuery({

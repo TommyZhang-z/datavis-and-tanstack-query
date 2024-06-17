@@ -1,6 +1,13 @@
 // App.jsx
 import { useState, useEffect, useMemo } from "react";
-import { LineChart, Line, ResponsiveContainer, Tooltip, YAxis } from "recharts";
+import {
+  LineChart,
+  Line,
+  ResponsiveContainer,
+  Tooltip,
+  YAxis,
+  Legend,
+} from "recharts";
 import {
   Card,
   CardContent,
@@ -132,10 +139,11 @@ const SingleMode = () => {
 };
 
 const SingleModeV2 = () => {
-  const { pokemons, stats, selectedPokemons, updatePokemons } = usePokemonsAndStats({
-    nSlots: 1,
-    selector: (data) => data[0].map((item) => ({ line1: item.strength }))
-  });
+  const { pokemons, stats, selectedPokemons, updatePokemons } =
+    usePokemonsAndStats({
+      nSlots: 1,
+      selector: (data) => data[0].map((item) => ({ line1: item.strength })),
+    });
 
   const color = useMemo(() => {
     if (selectedPokemons[0] === "妙蛙种子") return "#15A44A";
@@ -319,17 +327,18 @@ const ComparisonMode = () => {
 };
 
 const ComparisonModeV2 = () => {
-  const { pokemons, stats, selectedPokemons, updatePokemons } = usePokemonsAndStats({
-    nSlots: 2,
-    selector: (data) => {
-      if (!data) return [];
-      const [data1, data2] = data;
-      return data1.map((item, index) => ({
-        line1: item.strength,
-        line2: data2[index]?.strength,
-      }));
-    }
-  })
+  const { pokemons, stats, selectedPokemons, updatePokemons } =
+    usePokemonsAndStats({
+      nSlots: 2,
+      selector: (data) => {
+        if (!data) return [];
+        const [data1, data2] = data;
+        return data1.map((item, index) => ({
+          line1: item.strength,
+          line2: data2[index]?.strength,
+        }));
+      },
+    });
 
   if (pokemons.isLoading || stats.isLoading) return <div>Loading...</div>;
   if (pokemons.isError || stats.isError) return <div>Error loading data</div>;
@@ -382,8 +391,12 @@ const ComparisonModeV2 = () => {
       </div>
       <Card className="w-full">
         <CardHeader>
-          <CardTitle>{selectedPokemons[0]} vs {selectedPokemons[1]}</CardTitle>
-          <CardDescription>{selectedPokemons[0]}和{selectedPokemons[1]}的战斗力曲线对比</CardDescription>
+          <CardTitle>
+            {selectedPokemons[0]} vs {selectedPokemons[1]}
+          </CardTitle>
+          <CardDescription>
+            {selectedPokemons[0]}和{selectedPokemons[1]}的战斗力曲线对比
+          </CardDescription>
         </CardHeader>
         <CardContent className="pb-4">
           <div className="h-[200px]">
@@ -428,10 +441,12 @@ const ComparisonModeV2 = () => {
                     return null;
                   }}
                 />
+                <Legend />
                 <Line
                   type="monotone"
                   dataKey="line1"
-                  stroke="#15A44A"
+                  name={selectedPokemons[0]}
+                  stroke="#3581B8"
                   strokeWidth={2}
                   activeDot={{
                     r: 6,
@@ -440,7 +455,8 @@ const ComparisonModeV2 = () => {
                 <Line
                   type="monotone"
                   dataKey="line2"
-                  stroke="#2563EB"
+                  name={selectedPokemons[1]}
+                  stroke="#FCB07E"
                   strokeWidth={2}
                   activeDot={{
                     r: 6,
@@ -459,7 +475,7 @@ const App = () => {
   return (
     <div className="w-full min-h-screen flex justify-center items-center flex-col gap-5 bg-background">
       {/* <SingleMode /> */}
-      <SingleModeV2 />
+      {/* <SingleModeV2 /> */}
       <ComparisonModeV2 />
     </div>
   );
